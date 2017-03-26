@@ -18,113 +18,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 
-// ejemplo BitmapDrawable
-//public class MainActivity extends Activity {
-//    EjemploView ejemploView;
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState)
-//    {
-//        super.onCreate(savedInstanceState);
-//        //setContentView(R.layout.activity_main);
-//        ejemploView = new EjemploView(this);
-//        setContentView(ejemploView);
-//    }
-//
-//    public class EjemploView extends View
-//    {
-//       private Drawable miImagen;
-//
-//        public EjemploView (Context context)
-//        {
-//            super(context);
-//            Resources res = context.getResources();
-//            miImagen = res.getDrawable(R.drawable.mi_imagen);
-//            miImagen.setBounds(30,30,200,200);
-//        }
-//        @Override
-//        protected void onDraw(Canvas canvas)
-//        {
-//            miImagen.draw(canvas);
-//        }
-//    }
-//}
-
-//public class MainActivity extends Activity {
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        //setContentView(R.layout.activity_main);
-//        ImageView image = new ImageView(this);
-//        Drawable bitmapDrawable = (Drawable)
-//                getResources().getDrawable(R.drawable.mi_imagen);
-//        image.setImageDrawable(bitmapDrawable);
-//        setContentView(image);
-//    }
-//}
-
-
-// ejemplo GradientDrawable
-//public class MainActivity extends Activity {
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        //setContentView(R.layout.activity_main);
-//        ImageView image = new ImageView(this);
-//        GradientDrawable gradientEjemplo = (GradientDrawable)
-//                getResources().getDrawable(R.drawable.degradado);
-//        image.setImageDrawable(gradientEjemplo);
-//        setContentView(image);
-//    }
-//}
-
-//ejemplo TransitionDrawable
-//public class MainActivity extends Activity {
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        //setContentView(R.layout.activity_main);
-//        ImageView image = new ImageView(this);
-//        TransitionDrawable transition = (TransitionDrawable)
-//                getResources().getDrawable(R.drawable.transicion);
-//        transition.startTransition(2000);
-//        image.setImageDrawable(transition);
-//        setContentView(image);
-//    }
-//}
-
-// ejemplo ShapeDrawable
-//public class MainActivity extends Activity {
-//    EjemploView ejemploView;
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        //setContentView(R.layout.activity_main);
-//        ejemploView = new EjemploView(this);
-//        setContentView(ejemploView);
-//    }
-//
-//    public class EjemploView extends View {
-//
-//        private ShapeDrawable miImagen;
-//
-//        public EjemploView (Context context) {
-//            super(context);
-//
-//            miImagen  = new ShapeDrawable(new OvalShape());
-//            miImagen.getPaint().setColor(0xff0000ff);
-//            miImagen.setBounds(10, 10, 310, 60);
-//        }
-//        @Override
-//        protected void onDraw(Canvas canvas) {
-//            miImagen.draw(canvas);
-//        }
-//    }
-//}
 
 // ejemplo AnimationDrawable
 public class MainActivity extends Activity {
@@ -147,6 +40,116 @@ public class MainActivity extends Activity {
         setContentView(vista);
 
     }
+/*
+    // ejemplo BitmapDrawable
+public class MainActivity extends Activity {
+    EjemploView ejemploView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        //setContentView(R.layout.activity_main);
+        ejemploView = new EjemploView(this);
+        setContentView(ejemploView);
+    }
+
+    public class EjemploView extends View
+    {
+       private Drawable miImagen;
+
+        public EjemploView (Context context)
+        {
+            super(context);
+            Resources res = context.getResources();
+            miImagen = res.getDrawable(R.drawable.mi_imagen);
+            miImagen.setBounds(30,30,200,200);
+        }
+        @Override
+        protected void onDraw(Canvas canvas)
+        {
+            miImagen.draw(canvas);
+        }
+    }
+}
+
+public class MainActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        //setContentView(R.layout.activity_main);
+        ImageView image = new ImageView(this);
+        Drawable bitmapDrawable = (Drawable)
+                getResources().getDrawable(R.drawable.mi_imagen);
+        image.setImageDrawable(bitmapDrawable);
+        setContentView(image);
+    }
+}
+
+
+ ejemplo GradientDrawable
+public class MainActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        //setContentView(R.layout.activity_main);
+        ImageView image = new ImageView(this);
+        GradientDrawable gradientEjemplo = (GradientDrawable)
+                getResources().getDrawable(R.drawable.degradado);
+        image.setImageDrawable(gradientEjemplo);
+        setContentView(image);
+    }
+}
+
+ejemplo TransitionDrawable
+public class MainActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        //setContentView(R.layout.activity_main);
+        ImageView image = new ImageView(this);
+        TransitionDrawable transition = (TransitionDrawable)
+                getResources().getDrawable(R.drawable.transicion);
+        transition.startTransition(2000);
+        image.setImageDrawable(transition);
+        setContentView(image);
+    }
+}
+
+ ejemplo ShapeDrawable
+public class MainActivity extends Activity {
+    EjemploView ejemploView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        //setContentView(R.layout.activity_main);
+        ejemploView = new EjemploView(this);
+        setContentView(ejemploView);
+    }
+
+    public class EjemploView extends View {
+
+        private ShapeDrawable miImagen;
+
+        public EjemploView (Context context) {
+            super(context);
+
+            miImagen  = new ShapeDrawable(new OvalShape());
+            miImagen.getPaint().setColor(0xff0000ff);
+            miImagen.setBounds(10, 10, 310, 60);
+        }
+        @Override
+        protected void onDraw(Canvas canvas) {
+            miImagen.draw(canvas);
+        }
+    }
+    }
+    */
+
 }
 
 
