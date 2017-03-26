@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android= "http://schemas.android.com/apk/res/android"
+    android:oneshot= "false">
+    <item android:drawable="@drawable/lady35"
+        android:duration="100" />
+    <item android:drawable="@drawable/lady36"
+        android:duration="100" />
+    <item android:drawable="@drawable/lady37"
+        android:duration="100" />
+    <item android:drawable="@drawable/lady38"
+        android:duration="100" />
+    <item android:drawable="@drawable/lady39"
+        android:duration="100" />
+    <item android:drawable="@drawable/lady40"
+        android:duration="100" />
+    <item android:drawable="@drawable/lady41"
+        android:duration="100" />
+    <item android:drawable="@drawable/lady42"
+        android:duration="100" />
+    <item android:drawable="@drawable/lady43"
+        android:duration="100" />
+    <item android:drawable="@drawable/lady44"
+        android:duration="100" />
+    <item android:drawable="@drawable/lady45"
+        android:duration="100" />
+    <item android:drawable="@drawable/lady47"
+        android:duration="100" />
+    <item android:drawable="@drawable/lady49"
+        android:duration="100" />
+    <item android:drawable="@drawable/lady50"
+        android:duration="100" />
+    <item android:drawable="@drawable/lady51"
+        android:duration="100" />
+    <item android:drawable="@drawable/lady52"
+        android:duration="100" />
+    <item android:drawable="@drawable/lady53"
+        android:duration="100" />
+
+</animation-list>
